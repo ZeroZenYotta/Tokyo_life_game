@@ -12,12 +12,13 @@
     "重新开始"
   ],
   "stats": {
-    "money": "日元；初始家庭背景决定起点",
-    "energy": "行动资源；不足时需要休息",
-    "study": "学习能力",
-    "skill": "工作/创业能力",
-    "social": "社交与关系能力",
-    "health": "健康状态"
+    "money": "日元；新开局统一为200000円",
+    "energy": "初始100%；每日夜间恢复20点；降到−10强制养病7天后恢复100，活动消耗待后续平衡",
+    "study": "学识累计点数；无100点上限，不代表课程完成率",
+    "skill": "技能累计点数；无100点上限",
+    "social": "社交累计点数；无100点上限",
+    "health": "初始90；范围0–100",
+    "age": "初始24岁"
   },
   "characters": [
     {
@@ -68,5 +69,43 @@
     "平衡数值和结局条件",
     "改写渲染层以适配微信小游戏 Canvas/API",
     "真机测试和平台发布流程"
-  ]
+  ],
+  "jlpt_game_rules": {
+    "registration_months": [
+      4,
+      9
+    ],
+    "exam_dates": [
+      "07-01 AM",
+      "12-01 AM"
+    ],
+    "result_delay_days": 45,
+    "passing_requirements": {
+      "N5": {
+        "jp-basic": 8
+      },
+      "N4": {
+        "jp-basic": 8,
+        "jp-mid": 8
+      },
+      "N3": {
+        "jp-basic": 8,
+        "jp-mid": 8,
+        "jp-advanced": 8
+      },
+      "N2": {
+        "jp-basic": 8,
+        "jp-mid": 8,
+        "jp-advanced": 8,
+        "jlpt-N2": 8
+      },
+      "N1": {
+        "jp-basic": 8,
+        "jp-mid": 8,
+        "jp-advanced": 8,
+        "jlpt-N1": 8
+      }
+    },
+    "note": "游戏内简化规则；按考试当天实际完成次数判定，非现实考试规则"
+  }
 }
